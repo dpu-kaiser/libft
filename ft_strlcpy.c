@@ -6,13 +6,13 @@
 /*   By: dkaiser <dkaiser@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/06 12:45:25 by dkaiser           #+#    #+#             */
-/*   Updated: 2024/03/06 13:30:25 by dkaiser          ###   ########.fr       */
+/*   Updated: 2024/03/07 14:01:05 by dkaiser          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 
-size_t	ft_strlcpy(char *restrict dst, const char *restrict src, size_t dstsize)
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
 	size_t	len;
 
@@ -26,9 +26,12 @@ size_t	ft_strlcpy(char *restrict dst, const char *restrict src, size_t dstsize)
 		}
 		dst[len] = '\0';
 		while (src[len] != '\0')
-		{
 			len++;
-		}
+	}
+	else
+	{
+		while (src[len] != '\0')
+			len++;
 	}
 	return (len);
 }
@@ -43,8 +46,8 @@ size_t	ft_strlcpy(char *restrict dst, const char *restrict src, size_t dstsize)
 /* 	size_t	len; */
 /* 	size_t	len2; */
 
-/* 	len = strlcpy(dst, src, 10); */
-/* 	len2 = ft_strlcpy(dst2, src, 10); */
+/* 	len = strlcpy(dst, src, 0); */
+/* 	len2 = ft_strlcpy(dst2, src, 0); */
 /* 	printf("strlcpy (%zu): %s\n", len, dst); */
 /* 	printf("ft_strlcpy (%zu): %s\n", len2, dst2); */
 /* } */

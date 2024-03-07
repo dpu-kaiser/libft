@@ -6,7 +6,7 @@
 /*   By: dkaiser <dkaiser@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/06 14:45:10 by dkaiser           #+#    #+#             */
-/*   Updated: 2024/03/06 15:10:48 by dkaiser          ###   ########.fr       */
+/*   Updated: 2024/03/07 14:26:15 by dkaiser          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	result = 0;
 	while (!result && n > 0 && (*s1 || *s2))
 	{
-		result = *s1 - *s2;
+		result = (unsigned char)*s1 - (unsigned char)*s2;
 		if (*s1)
 			s1++;
 		if (*s2)

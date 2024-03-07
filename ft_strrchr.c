@@ -6,7 +6,7 @@
 /*   By: dkaiser <dkaiser@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/06 14:25:30 by dkaiser           #+#    #+#             */
-/*   Updated: 2024/03/06 14:35:16 by dkaiser          ###   ########.fr       */
+/*   Updated: 2024/03/07 14:09:13 by dkaiser          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ char	*ft_strrchr(const char *s, int c)
 			last_occurrence = (char *)&s[i];
 		i++;
 	}
+	if (!c)
+		last_occurrence = (char *)&s[i];
 	return (last_occurrence);
 }
 

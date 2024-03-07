@@ -6,7 +6,7 @@
 /*   By: dkaiser <dkaiser@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/06 16:07:54 by dkaiser           #+#    #+#             */
-/*   Updated: 2024/03/06 16:24:52 by dkaiser          ###   ########.fr       */
+/*   Updated: 2024/03/07 16:40:20 by dkaiser          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,12 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	size_t	k;
 
 	i = 0;
+	if (*needle == '\0' || needle == haystack)
+		return ((char *)haystack);
 	while (i < len)
 	{
 		k = 0;
-		while (haystack[i + k] == needle[k])
+		while (haystack[i + k] && haystack[i + k] == needle[k] && i + k < len)
 		{
 			k++;
 		}
@@ -33,9 +35,12 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 }
 
 /* #include <stdio.h> */
-/* int main() { */
-/*     char haystack[] = "Hello world"; */
-/*     char needle[] = "d"; */
-/*     printf("strnstr: %s\n", strnstr(haystack, needle, 10)); */
-/*     printf("ft_strnstr: %s\n", ft_strnstr(haystack, needle, 10)); */
+
+/* int	main(void) */
+/* { */
+/* 	char	haystack[] = "M"; */
+/* 	char	needle[] = "MZIRIBMZE"; */
+
+/* 	printf("strnstr: %s\n", strnstr(haystack, haystack, 2)); */
+/* 	printf("ft_strnstr: %s\n", ft_strnstr(haystack, haystack, 2)); */
 /* } */

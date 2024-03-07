@@ -6,7 +6,7 @@
 /*   By: dkaiser <dkaiser@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 11:41:44 by dkaiser           #+#    #+#             */
-/*   Updated: 2024/03/06 14:12:14 by dkaiser          ###   ########.fr       */
+/*   Updated: 2024/03/07 13:50:41 by dkaiser          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	size_t	i;
 
+	if (!dst && !src)
+		return (dst);
 	if (dst > src)
 	{
 		i = len;
