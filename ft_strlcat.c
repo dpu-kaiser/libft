@@ -6,11 +6,11 @@
 /*   By: dkaiser <dkaiser@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/06 13:36:59 by dkaiser           #+#    #+#             */
-/*   Updated: 2024/03/07 16:09:50 by dkaiser          ###   ########.fr       */
+/*   Updated: 2024/03/10 13:15:10 by dkaiser          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 /* size_t	ft_strlcat(char *dst, const char *src, size_t dstsize) */
 /* { */

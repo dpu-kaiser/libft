@@ -6,11 +6,11 @@
 /*   By: dkaiser <dkaiser@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 11:41:44 by dkaiser           #+#    #+#             */
-/*   Updated: 2024/03/07 13:50:41 by dkaiser          ###   ########.fr       */
+/*   Updated: 2024/03/10 13:14:38 by dkaiser          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {

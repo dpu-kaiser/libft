@@ -6,9 +6,11 @@
 /*   By: dkaiser <dkaiser@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/06 14:12:39 by dkaiser           #+#    #+#             */
-/*   Updated: 2024/03/07 16:10:27 by dkaiser          ###   ########.fr       */
+/*   Updated: 2024/03/10 13:15:56 by dkaiser          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {
@@ -21,15 +23,18 @@ char	*ft_strchr(const char *s, int c)
 			return ((char *)&s[i]);
 		i++;
 	}
-	if (!c)
+	if (!(char)c)
 		return ((char *)&s[i]);
 	return (0);
 }
 
 /* #include <stdio.h> */
 /* #include <string.h> */
-/* int main() { */
-/*     char str[] = "Hello world"; */
-/*     printf("strchr: %s\n", strchr(str, 'o')); */
-/*     printf("ft_strchr: %s\n", ft_strchr(str, 'o')); */
+
+/* int	main(void) */
+/* { */
+/* 	char	str[] = "teste"; */
+
+/* 	printf("strchr: %p\n", strchr(str, '\0')); */
+/* 	printf("ft_strchr: %p\n", ft_strchr(str, '\0')); */
 /* } */

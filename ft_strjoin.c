@@ -6,11 +6,11 @@
 /*   By: dkaiser <dkaiser@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/07 10:15:33 by dkaiser           #+#    #+#             */
-/*   Updated: 2024/03/07 14:11:30 by dkaiser          ###   ########.fr       */
+/*   Updated: 2024/03/10 13:18:27 by dkaiser          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 static int	get_len(char const *s)
 {

@@ -6,11 +6,11 @@
 /*   By: dkaiser <dkaiser@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/06 14:45:10 by dkaiser           #+#    #+#             */
-/*   Updated: 2024/03/07 14:26:15 by dkaiser          ###   ########.fr       */
+/*   Updated: 2024/03/10 13:16:10 by dkaiser          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

@@ -6,12 +6,16 @@
 /*   By: dkaiser <dkaiser@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/06 21:38:24 by dkaiser           #+#    #+#             */
-/*   Updated: 2024/03/07 16:23:00 by dkaiser          ###   ########.fr       */
+/*   Updated: 2024/03/10 13:26:25 by dkaiser          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H_
-# define LIBFT_H_
+#ifndef LIBFT_H
+# define LIBFT_H
+
+# include <stdlib.h>
+# include <string.h>
+# include <unistd.h>
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);

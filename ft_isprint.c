@@ -6,9 +6,11 @@
 /*   By: dkaiser <dkaiser@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 21:25:31 by dkaiser           #+#    #+#             */
-/*   Updated: 2024/03/04 21:27:57 by dkaiser          ###   ########.fr       */
+/*   Updated: 2024/03/10 13:11:14 by dkaiser          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isprint(int c)
 {
