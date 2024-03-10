@@ -6,7 +6,7 @@
 /*   By: dkaiser <dkaiser@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/07 10:24:17 by dkaiser           #+#    #+#             */
-/*   Updated: 2024/03/10 13:18:40 by dkaiser          ###   ########.fr       */
+/*   Updated: 2024/03/10 14:03:13 by dkaiser          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,9 +34,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	start = (char *)s1;
 	while (is_in(*start, set))
 		start++;
-	i = 0;
-	while (s1[i])
-		i++;
+	i = ft_strlen(s1);
 	end = (char *)s1 + i - 1;
 	while (end > start && is_in(*end, set))
 		end--;

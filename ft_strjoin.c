@@ -6,21 +6,11 @@
 /*   By: dkaiser <dkaiser@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/07 10:15:33 by dkaiser           #+#    #+#             */
-/*   Updated: 2024/03/10 13:18:27 by dkaiser          ###   ########.fr       */
+/*   Updated: 2024/03/10 14:02:07 by dkaiser          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-static int	get_len(char const *s)
-{
-	int	i;
-
-	i = 0;
-	while (s[i])
-		i++;
-	return (i);
-}
 
 static int	copy_str(char *dst, const char *src)
 {
@@ -40,7 +30,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	int		len;
 	char	*result;
 
-	len = get_len(s1) + get_len(s2);
+	len = ft_strlen(s1) + ft_strlen(s2);
 	result = malloc(len + 1);
 	if (result)
 	{

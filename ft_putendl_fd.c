@@ -6,7 +6,7 @@
 /*   By: dkaiser <dkaiser@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/06 20:47:17 by dkaiser           #+#    #+#             */
-/*   Updated: 2024/03/10 13:20:39 by dkaiser          ###   ########.fr       */
+/*   Updated: 2024/03/10 14:07:58 by dkaiser          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,6 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	int	len;
-
-	len = 0;
-	while (s[len])
-	{
-		len++;
-	}
-	write(fd, s, len);
+	write(fd, s, ft_strlen(s));
 	write(fd, "\n", 1);
 }
