@@ -6,7 +6,7 @@
 /*   By: dkaiser <dkaiser@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/06 21:58:31 by dkaiser           #+#    #+#             */
-/*   Updated: 2024/03/10 14:01:27 by dkaiser          ###   ########.fr       */
+/*   Updated: 2024/03/10 15:39:38 by dkaiser          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	unsigned int slen;
-	size_t i;
-	char	*result;
+	unsigned int	slen;
+	size_t			i;
+	char			*result;
 
 	slen = ft_strlen(s);
 	if (start >= slen)

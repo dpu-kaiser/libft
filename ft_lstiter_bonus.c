@@ -1,23 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_lstiter_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dkaiser <dkaiser@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/06 19:45:56 by dkaiser           #+#    #+#             */
-/*   Updated: 2024/03/10 15:34:06 by dkaiser          ###   ########.fr       */
+/*   Created: 2024/03/10 16:39:47 by dkaiser           #+#    #+#             */
+/*   Updated: 2024/03/10 16:41:07 by dkaiser          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_calloc(size_t count, size_t size)
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	void	*result;
-
-	result = malloc(count * size);
-	if (result)
-		ft_bzero(result, count * size);
-	return (result);
+	if (!lst)
+		return ;
+	while (lst->next)
+	{
+		f(lst->content);
+		lst = lst->next;
+	}
+	f(lst->content);
 }

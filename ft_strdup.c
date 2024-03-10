@@ -6,7 +6,7 @@
 /*   By: dkaiser <dkaiser@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/06 19:54:16 by dkaiser           #+#    #+#             */
-/*   Updated: 2024/03/10 13:59:13 by dkaiser          ###   ########.fr       */
+/*   Updated: 2024/03/10 15:28:58 by dkaiser          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strdup(const char *s1)
 	if (!result)
 		return (0);
 	result[len] = '\0';
-	while (--len)
+	while (len--)
 		result[len] = s1[len];
 	return (result);
 }
