@@ -6,7 +6,7 @@
 /*   By: dkaiser <dkaiser@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/10 14:57:39 by dkaiser           #+#    #+#             */
-/*   Updated: 2024/03/10 15:40:57 by dkaiser          ###   ########.fr       */
+/*   Updated: 2024/03/11 12:52:00 by dkaiser          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ t_list	*ft_lstnew(void *content)
 
 	result = malloc(sizeof(t_list));
 	if (!result)
-		return (0);
+		return (NULL);
 	result->content = content;
 	result->next = NULL;
 	return (result);
