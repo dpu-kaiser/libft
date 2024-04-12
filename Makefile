@@ -62,7 +62,7 @@ $(NAME): $(OBJ_FILES)
 	ar rcs $(NAME) $(OBJ_FILES)
 
 clean:
-	rm -f $(OBJ_FILES)
+	rm -f $(OBJ_FILES) $(BONUS_FILES)
 
 fclean: clean
 	rm -f $(NAME)
