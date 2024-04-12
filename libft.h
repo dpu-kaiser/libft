@@ -6,7 +6,7 @@
 /*   By: dkaiser <dkaiser@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/10 16:37:54 by dkaiser           #+#    #+#             */
-/*   Updated: 2024/04/12 16:44:02 by dkaiser          ###   ########.fr       */
+/*   Updated: 2024/04/12 16:50:28 by dkaiser          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 
 # include "ft_printf.h"
+# include "get_next_line.h"
 # include <stdlib.h>
 # include <string.h>
 # include <unistd.h>

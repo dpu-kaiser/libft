@@ -39,7 +39,9 @@ SRC_FILES = ft_atoi.c \
 			ft_printf.c \
 			ft_printnbr.c \
 			ft_printhex.c \
-			ft_printaddr.c
+			ft_printaddr.c \
+			get_next_line.c \
+			get_next_line_utils.c
 
 
 OBJ_FILES = $(SRC_FILES:.c=.o)
@@ -62,7 +64,7 @@ $(NAME): $(OBJ_FILES)
 	ar rcs $(NAME) $(OBJ_FILES)
 
 clean:
-	rm -f $(OBJ_FILES) $(BONUS_FILES)
+	rm -f $(OBJ_FILES) $(BONUS_OBJ)
 
 fclean: clean
 	rm -f $(NAME)
