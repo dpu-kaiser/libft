@@ -58,7 +58,12 @@ OBJ_FILES = $(SRC_FILES:.c=.o)
 all: $(NAME)
 
 $(NAME): $(OBJ_FILES)
-	ar rcs $(NAME) $(OBJ_FILES)
+	@ar rcs $(NAME) $(OBJ_FILES)
+	@echo "[$(NAME)] Created archive."
+
+%.o:%.c
+	@$(CC) $(CFLAGS) -c -o $@ $<
+	@echo "[$(NAME)] Compiled object file $@ for $<."
 
 clean:
 	@$(foreach file, $(OBJ_FILES), test -f $(file) && rm $(file) && echo "[$(NAME)] Removed $(file)." || :;)
