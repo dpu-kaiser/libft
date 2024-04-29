@@ -42,12 +42,8 @@ SRC_FILES = ft_atoi.c \
 			ft_printaddr.c \
 			get_next_line.c \
 			get_next_line_utils.c \
-			ft_atol.c
-
-
-OBJ_FILES = $(SRC_FILES:.c=.o)
-
-BONUS_SRC = ft_lstnew_bonus.c \
+			ft_atol.c \
+			ft_lstnew_bonus.c \
 			ft_lstadd_front_bonus.c \
 			ft_lstsize_bonus.c \
 			ft_lstlast_bonus.c \
@@ -57,18 +53,17 @@ BONUS_SRC = ft_lstnew_bonus.c \
 			ft_lstiter_bonus.c \
 			ft_lstmap_bonus.c
 
-BONUS_OBJ = $(BONUS_SRC:.c=.o)
+OBJ_FILES = $(SRC_FILES:.c=.o)
 
 all: $(NAME)
 
-$(NAME): $(OBJ_FILES) $(BONUS_OBJ)
-	ar rcs $(NAME) $(OBJ_FILES) $(BONUS_OBJ)
+$(NAME): $(OBJ_FILES)
+	ar rcs $(NAME) $(OBJ_FILES)
 
 clean:
-	rm -f $(OBJ_FILES) $(BONUS_OBJ)
-
+	@$(foreach file, $(OBJ_FILES), test -f $(file) && rm $(file) && echo "[$(NAME)] Removed $(file)." || :;)
 fclean: clean
-	rm -f $(NAME)
+	@test -f $(NAME) && rm -f $(NAME) && echo "[$(NAME)] Removed archive." || :
 
 re: fclean all
 
