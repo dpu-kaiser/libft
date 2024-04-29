@@ -6,11 +6,11 @@
 /*   By: dkaiser <dkaiser@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/26 16:18:28 by dkaiser           #+#    #+#             */
-/*   Updated: 2024/04/26 17:56:54 by dkaiser          ###   ########.fr       */
+/*   Updated: 2024/04/29 16:40:38 by dkaiser          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "libft.h"
 
 long	ft_atol(const char *str)
 {
