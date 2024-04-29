@@ -41,7 +41,8 @@ SRC_FILES = ft_atoi.c \
 			ft_printhex.c \
 			ft_printaddr.c \
 			get_next_line.c \
-			get_next_line_utils.c
+			get_next_line_utils.c \
+			ft_atol.c
 
 
 OBJ_FILES = $(SRC_FILES:.c=.o)
