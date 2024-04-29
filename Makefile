@@ -63,7 +63,7 @@ $(NAME): $(OBJ_FILES)
 
 %.o:%.c
 	@$(CC) $(CFLAGS) -c -o $@ $<
-	@echo "[$(NAME)] Compiled object file $@ for $<."
+	@echo "[$(NAME)] Compiled $<."
 
 clean:
 	@$(foreach file, $(OBJ_FILES), test -f $(file) && rm $(file) && echo "[$(NAME)] Removed $(file)." || :;)
