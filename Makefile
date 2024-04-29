@@ -60,8 +60,8 @@ BONUS_OBJ = $(BONUS_SRC:.c=.o)
 
 all: $(NAME)
 
-$(NAME): $(OBJ_FILES)
-	ar rcs $(NAME) $(OBJ_FILES)
+$(NAME): $(OBJ_FILES) $(BONUS_OBJ)
+	ar rcs $(NAME) $(OBJ_FILES) $(BONUS_OBJ)
 
 clean:
 	rm -f $(OBJ_FILES) $(BONUS_OBJ)
@@ -71,5 +71,4 @@ fclean: clean
 
 re: fclean all
 
-bonus: $(BONUS_OBJ)
-	ar rcs $(NAME) $(BONUS_OBJ)
+.PHONY: all clean fclean re
