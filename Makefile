@@ -56,6 +56,7 @@ SRC_FILES = ft_atoi.c \
 OBJ_FILES = $(SRC_FILES:.c=.o)
 
 all: $(NAME)
+	@:
 
 $(NAME): $(OBJ_FILES)
 	@ar rcs $(NAME) $(OBJ_FILES)
