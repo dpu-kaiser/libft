@@ -6,7 +6,7 @@
 /*   By: dkaiser <dkaiser@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/08 15:36:44 by dkaiser           #+#    #+#             */
-/*   Updated: 2024/03/10 13:09:06 by dkaiser          ###   ########.fr       */
+/*   Updated: 2024/05/08 11:49:32 by dkaiser          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,6 +87,16 @@ char	**ft_split(char const *s, char c)
 	}
 	result[w] = 0;
 	return (result);
+}
+
+void	ft_free_split(char **split)
+{
+	int	i;
+
+	i = 0;
+	while (split[i])
+		free(split[i++]);
+	free(split);
 }
 
 /* #include <stdio.h> */
